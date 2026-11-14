@@ -1,0 +1,56 @@
+@media only screen and (min-width: 40rem) {
+
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    /****** Navigation ******/
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    nav ul li {
+        width: auto;
+    }
+    nav ul li button {
+        min-width: 120px;
+    }
+    nav a {
+      border: none;
+    }
+
+    /****** Schedule ******/
+.schedule {
+    font-size: 1rem;
+}
+.schedule img {
+    width: 150px;
+}
+
+
+     /****** HAMBURGER ******/
+     .hamburger {
+        display: none;
+    }
+
+    /****** MAIN ******/
+.sbs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+}

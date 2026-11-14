@@ -1,0 +1,129 @@
+/****** COLOR ******/
+:root {
+    --color-primary: #5f94d4;
+    --color-secondary: #292521;
+    /* grey scale */
+    --color-greyscale-05: lab(98% 0 0);
+    --color-greyscale-10: lab(97% 0 0);
+    --color-greyscale-20: lab(91% 0 0);
+    --color-greyscale-30: lab(85% 0 0);
+    --color-greyscale-40: lab(66% 0 0);
+    --color-greyscale-50: lab(48% 0 0);
+    --color-greyscale-60: lab(34% 0 0);
+    --color-greyscale-70: lab(27% 0 0);
+    --color-greyscale-80: lab(15% 0 0);
+    --color-greyscale-90: lab(8% 0 0);
+    --color-greyscale-95: lab(5% 0 0);
+
+
+}
+
+
+
+/****** BORDER BOX ******/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/****** BODY ******/
+body {
+    margin: 0;
+    padding: 0 0 80px 0;
+    font-family: "Roboto Mono";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    transition: background-image 0.5s ease-in-out;
+}
+
+
+/****** Navigation ******/
+nav {
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+nav ul li button:hover {
+    background-color: var(--color-greyscale-20);
+    color: var(--color-secondary);
+}
+
+/* Small screens - 2 rows of 2 buttons */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    nav ul li {
+        width: 45%;
+    }
+
+    nav ul li button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+#park-name {
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/****** RGBA ******/
+#show-here {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#show-here img {
+    border-radius: 10px;
+}
+
+#show-here p {
+    margin: 5px 0;
+}
+
+
